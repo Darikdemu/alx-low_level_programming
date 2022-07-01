@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
- *
+ * Main - Entry point
+ * REturn Always  0 (seccess)
  */
 int main(void)
 {
