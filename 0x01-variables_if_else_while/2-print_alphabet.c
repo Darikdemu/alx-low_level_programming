@@ -1,41 +1,27 @@
-lude <stdio.h>
-
-
+#include <stdio.h>
 
 /**
- *
- *  * main - Prints the alphabet in lowercase
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+* main - Prints the alphabet in lowercase
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 
 {
 
-		char letter;
+	char letter;
+
+	letter = 'a';
+	while (letter <= 'z')
+
+	{
+		putchar(letter);
+		letter = letter + 1;
+	}
+
+	putchar('\n');
 
 
-
-			letter = 'a';
-
-				while (letter <= 'z')
-
-						{
-
-									putchar(letter);
-
-											letter = letter + 1;
-
-												}
-
-					putchar('\n');
-
-
-
-						return (0);
+	return (0);
 
 }
