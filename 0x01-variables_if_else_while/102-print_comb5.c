@@ -21,7 +21,7 @@ int num1, num2;
 			putchar((num1 % 10) + '0');
 
 			if (num1 == 98 && num2 == 99)
-				continue;
+			continue;
 
 			putchar(',');
 			putchar(' ');
