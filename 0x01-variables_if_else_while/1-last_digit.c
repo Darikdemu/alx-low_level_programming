@@ -20,10 +20,12 @@ if (last_digit > 5)
 {
 printf("Last Digit of %i is %i and is greater than %i\n", n, last_digit, 5);
 }
+
 else if (last_digit == 0)
 {
 printf("Last Digit of %i is %i and %i\n", n, last_digit, 0);
 }
+
 else if (last_digit < 6)
 {
 printf("Last Digit of %i is %i and is less than %i and not %i\n", n,
