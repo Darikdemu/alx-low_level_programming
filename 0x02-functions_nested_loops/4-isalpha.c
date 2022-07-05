@@ -2,8 +2,7 @@
 
 /**
 * _isalpha - checks for alphabetic character
-* @c: takes in account:wq!
-*
+* @c: c is an ascii character
 * Return : 1 if c is letter, uppercase or lowercase otherwise 0
 */
 
