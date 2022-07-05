@@ -2,7 +2,7 @@
 
 /**
 * main - check the code.
-* Return: Always 0.
+* Description : prints lowwercase alphabet
 */
 
 void print_alphabet_x10(void)
