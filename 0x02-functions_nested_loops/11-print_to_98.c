@@ -5,45 +5,25 @@
 * print_to_98 - prints all natural numbers from n to 98,
 * followed by a new line
 * @n: starting integer
-* Return: void
+* Return : void returns nothing
 */
 void print_to_98(int n)
 {
+void print_to_98(int n)
+
+{
 	if (n < 98)
 	{
-		while (n <= 98)
-		{
-			_putchar("%d", n);
-			if (n != 98)
-			{
-				_putchar(", ");
-			}
-			n++;
-		}
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+			printf("%d\n", 98);
+
 	}
-
-	else if (n > 98)
-	{
-		while (n >= 98)
-		{
-			_putchar("%d", n);
-			if (n != 98)
-			{
-			_putchar(", ")
-		}
-			n--;
-
-		}
-	}
-
 	else
 	{
-		_putchar("98");
-	}
-	_putchar("\n");
-
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+			printf("%d\n", 98);
 	}
 
 }
-
-
