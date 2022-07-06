@@ -46,4 +46,5 @@ int digit, mult, result;
 		}
 		_putchar('\n');
 	}
+	}
 }
