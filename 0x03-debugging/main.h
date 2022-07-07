@@ -15,5 +15,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
-void print_remaining_days(int, int, int)   
+void print_remaining_days(int month, int day, int year);   
 #endif /* MAIN_H */
