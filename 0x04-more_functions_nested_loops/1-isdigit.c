@@ -6,7 +6,6 @@
 *Return: returns 1 if it is a digit, 0 if not
 */
 
-
 int _isdigit(int c)
 
 {
