@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * rev_string - This fuction print a string reverser
-*@s: this is the pointer that point to a string
+* @s: this is the pointer that point to a string
 */
 void rev_string(char *s)
 {
@@ -20,6 +20,7 @@ void rev_string(char *s)
 	for (a = 0; a < len / 2; a++)
 	{
 		char x;
+
 
 		x = *end;
 		*end = *begin;
