@@ -1,31 +1,29 @@
 #include "main.h"
 /**
-* cap_string - a function that capitalizes all words of a string
-* @n: input string
-* Return: caps on first letter of a separator
+* leet - encodes a string into 1337
+* @s: input string.
+* Return: the pointer to dest.
 */
-char *cap_string(char *n)
+char *leet(char *s)
 {
-	int i, x;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-			 '(', ')', '{', '}', ' ', '\n', '\t'};
-	for (i = 0; n[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		for (i = 0; i < 5; i++)
 		{
-			n[i] = n[i] - cap;
-		}
-		cap = 0;
-		for (x = 0; x <= 12; x++)
-		{
-			if (n[i] == separators[x])
+			if (*(s + count) == low_letters[i] || *(s + count) == up				p_letters[i])
 			{
-				x = 12;
-				cap = 32;
-			}
+				*(s + count) = numbers[i];
+
+				break;
+																																	}
 		}
+		count++;
 	}
-	return (n);
+	return (s);
+
 }
