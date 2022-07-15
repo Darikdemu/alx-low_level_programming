@@ -38,7 +38,7 @@ void print_number(int n)
 	/*Main */
 	while (expo >= 1)
 	{
-		printf("expo: %d, res: %d\n", expo, ((res /expo) % 10) * -1);
+		printf("expo: %d, res: %d\n", expo, ((res / expo) % 10) * -1);
 
 		_putchar(((res / expo) % 10) * -1 + '0');
 												expo /= 10;
