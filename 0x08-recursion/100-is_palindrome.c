@@ -1,29 +1,60 @@
 #include "main.h"
+int lengthc(char *s);
+int palindrome(char str[], int st, int end);
 /**
-* prime_check - checks to see if number is prime
-* @f: factor check
-* @p: possible prime number
-* Return: 1 if prime, 0 if not
+* is_palindrome - Entry Point
+* @s: input
+* Return: 0
+*/
+int is_palindrome(char *s)
+{
+	int len;
+
+	len = lengthc(s);
+
+	if (len == 0)
+		return (1);
+	return (palindrome(s, 0, len - 1));
+
+}
+/**
+* lengthc - finds the length count
+* @s: input
+* Return: length size
+*/
+int lengthc(char *s)
+{
+	if (*s != '\0')
+		return (1 + lengthc(s + 1));
+
+	return (0);
+
+}
+
+
+/**
+* palindrome - checks if start and end of string matches
+* @str: string
+* @st: start of string 0
+* @end: end of string from is_palindrome, from lengthc
+* Return: if str is a palindrome
 */
 
-int prime_check(int f, int p)
+int palindrome(char str[], int st, int end)
 {
-	if (p < 2 || p % f == 0)
+	if (st >= end)
+		return (1);
+
+	if (str[st] != str[end])
 		return (0);
-	else if (f > p / 2)
-		return (1);
-	else
-		return (prime_check(f + 1, p));
+
+	if (st <= end || st < end + 1)
+		return (palindrome(str, st + 1, end - 1));
+
+	return (1);
+
 }
 
-/**
-* is_prime_number - states if number is prime
-* @n: number to check
-* Return: 1 if prime, 0 if not
-*/
-int is_prime_number(int n)
-{
-	if (n == 2)
-		return (1);
-	return (prime_check(2, n));
-}
+Footer
+
+© 2022 GitHub, Inc.
