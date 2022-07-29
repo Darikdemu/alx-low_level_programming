@@ -31,7 +31,6 @@ void _is_zero(char *argv[])
 		exit(0);
 
 	}
-
 }
 /**
 * _initialize_array - set memery to zero in a new array
@@ -41,7 +40,6 @@ void _is_zero(char *argv[])
 */
 char *_initialize_array(char *ar, int lar)
 {
-
 	int i = 0;
 
 	for (i = 0; i < lar; i++)
@@ -49,7 +47,6 @@ char *_initialize_array(char *ar, int lar)
 		ar[lar] = '\0';
 
 	return (ar);
-
 }
 /**
 * _checknum - determines length of the number
@@ -68,10 +65,7 @@ int _checknum(char *argv[], int n)
 			printf("Error\n");
 			exit(98);
 		}
-
-
 	return (ln);
-
 }
 /**
 * main - Entry point.
