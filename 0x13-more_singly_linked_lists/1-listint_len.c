@@ -1,21 +1,15 @@
 #include "lists.h"
 /**
-* add_nodeint - add a new node at the beginning
-* of a linked list
-* @head: head of a list.
-* @n: n element.
-* Return: address of the new element. NUll if it failed.
+* listint_len - the number of elements in a linked list_t list
+* @h: list to browse
+* Return: size of the list
 */
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
-	listint_t *new;
-
-	new = malloc(sizeof(listint_t));
-
-	if (new == NULL)
-		return (NULL);
-	new->n = n;
-	new->next = *head;
-	*head = new;
-	return (*head);
+	if (h == NULL)
+		return (0);
+	if (h->next == NULL)
+		return (1);
+	else
+		return (listint_len(h->next) + 1);
 }
