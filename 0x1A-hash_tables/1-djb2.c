@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- *sh_djb2 - Hash function, takes a string and turns it into a hash number
+ *hash_djb2 - Hash function, takes a string and turns it into a hash number
  * @str: the string, a constant value unrepeated in the hash table
  * Return: The hash number
  */
