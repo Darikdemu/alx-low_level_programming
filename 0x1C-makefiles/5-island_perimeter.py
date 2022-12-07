@@ -2,6 +2,8 @@
 """dule that calculates the perimeter of an island in a grid."""
 def island_perimeter(grid):
 
+
+
     """Returns thei number perimeter of the island described in grid.
     The grid represents water by 0 and land by 1.
     Args:
