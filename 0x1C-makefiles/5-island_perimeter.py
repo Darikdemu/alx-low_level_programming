@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """dule that calculates the perimeter of an island in a grid."""
+
+
 def island_perimeter(grid):
-
-
-
     """Returns thei number perimeter of the island described in grid.
     The grid represents water by 0 and land by 1.
     Args:
@@ -15,8 +14,6 @@ def island_perimeter(grid):
     height = len(grid)
     edges = 0
     size = 0
-
-
 
     for i in range(height):
         for j in range(width):
